@@ -1,0 +1,12 @@
+bench 100x100
+ohp 2x2
+squat 1x1
+tricep extension 5x12
+deadlift 2x12 5x12
+front squat 1x1
+push ups 50x5
+rdl 5x5
+rows 2x2
+jump squats 5x5
+pull ups 3x12
+bench press 3x5

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>526</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>616</width>
+    <height>526</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gym Progress Tracker</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="windowTabs">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>661</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="generalTab">
+     <attribute name="title">
+      <string>General</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>461</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Enter Set|Rep|Weight:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QTextEdit" name="outputEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="setInput"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>Add Exercise</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Enter Record</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Search Exercise</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Search Record</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Go</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="exerciseInput"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Enter Exercise:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="logoLabel1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>221</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>dumbell.png</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="routineTab">
+     <attribute name="title">
+      <string>Routine</string>
+     </attribute>
+     <widget class="QTextEdit" name="routineEdit">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>491</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>491</width>
+        <height>371</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>491</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Exercise List</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>0</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>exIcon.png</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="recordTab">
+     <attribute name="title">
+      <string>Records</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>30</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>List of Previous Records</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="searchIcon">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>recordIcon.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="recordEdit">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>481</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="recordTabGraph">
+     <attribute name="title">
+      <string>Progression</string>
+     </attribute>
+     <widget class="QPushButton" name="chartButton">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>400</y>
+        <width>231</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Search Exercise:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="chartInput"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>19</x>
+        <y>69</y>
+        <width>581</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>616</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
